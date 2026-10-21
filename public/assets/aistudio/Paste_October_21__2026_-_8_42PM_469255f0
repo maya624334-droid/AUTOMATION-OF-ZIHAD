@@ -1,0 +1,860 @@
+# COMPLETE MASTER PROMPT — ZIHAD AUTIVEX AI AUTOMATION SERVICE
+
+## What It Is
+
+Build me a complete, professional, modern, multi-page web application called **ZIHAD AUTIVEX AI AUTOMATION SERVICE**.
+
+This website will be my personal professional brand, AI automation service website, and multi-page portfolio. It will introduce me in detail, showcase my skills and projects, present my AI automation services, and provide a professional way for potential clients to contact me.
+
+The website must include a fully functional frontend, Firebase-powered backend, secure user authentication, an administrator dashboard, customizable website content, and image and logo upload functionality.
+
+I want to build and manage this website using Google AI Studio and Firebase. Create an actual working application, not just a visual design, static landing page, or prototype.
+
+The website must be scalable so I can continuously add new portfolio projects, services, technologies, images, professional links, and other content without rebuilding the entire application.
+
+# 1. Brand Identity and Website Header
+
+Website name: ZIHAD AUTIVEX AI AUTOMATION SERVICE
+
+Short brand name: ZIHAD AUTIVEX
+
+Professional title: AI AUTOMATION SPECIALIST
+
+Brand purpose: Professional portfolio, AI automation services, workflow development, and business automation solutions.
+
+At the top of the website, create a premium professional header containing:
+
+- My custom logo.
+- The brand name ZIHAD AUTIVEX.
+- A short subtitle: AI AUTOMATION SERVICE.
+- Main navigation menu.
+- A Contact Me button.
+- A Login button or user account menu, where appropriate.
+- A responsive mobile navigation menu.
+
+Place the logo on the left side and navigation on the right on desktop. On mobile, use a clean collapsible navigation menu.
+
+Initially, display an elegant text-based logo or placeholder logo. I will upload my own custom logo later through the admin dashboard.
+
+Allow me to upload, replace, resize or reposition where practical, and remove the logo without editing source code.
+
+Also support a customizable favicon, browser title, brand name, tagline, and footer logo.
+
+# 2. Home Page
+
+Build a visually impressive professional homepage.
+
+The homepage should follow this content order:
+
+1. Header with logo and navigation.
+2. Main introduction and hero section.
+3. My name and professional title.
+4. Short introduction about me.
+5. Primary action buttons.
+6. Featured AI automation services.
+7. Featured portfolio projects.
+8. Skills and technologies.
+9. My professional journey.
+10. Why work with me.
+11. LinkedIn and other professional profile links.
+12. Contact or collaboration section.
+13. Professional footer.
+
+Use the following initial hero content:
+
+Brand: ZIHAD AUTIVEX
+
+Headline: BUILD. AUTOMATE. CREATE.
+
+Subtitle: AI Automation | Intelligent Workflows | Business Solutions
+
+Introduction: I am building my skills and projects in AI automation, workflow development, API integration, and intelligent business systems. My goal is to develop practical automation solutions that help businesses reduce repetitive work and improve their processes.
+
+Buttons:
+
+- Explore My Portfolio
+- Explore Services
+- Contact Me
+
+All text must be editable from the admin dashboard.
+
+Do not invent professional achievements, client testimonials, certifications, or business results. Make all personal content customizable.
+
+# 3. Detailed About Me Page
+
+Create a dedicated About Me page with a detailed, professionally organized introduction.
+
+This page is one of the most important parts of the website.
+
+Include the following sections:
+
+- Introduction.
+- Who I Am.
+- My Journey into AI Automation.
+- Why I Am Interested in Automation.
+- My Learning Journey.
+- My Current Projects.
+- My Technical Interests.
+- My Skills and Technologies.
+- My Approach to Solving Problems.
+- My Professional Goals.
+- My Future Vision.
+- My Work Philosophy.
+- What I Am Currently Building.
+- Contact and Collaboration.
+
+Write the initial introduction in natural, professional English using only the information provided in this prompt. Use editable placeholders for personal details that are not yet known.
+
+The writing should sound authentic, realistic, and personal. Avoid exaggerated claims or generic marketing language.
+
+Allow me to edit, expand, shorten, reorder, hide, or publish individual About Me sections from the admin dashboard.
+
+Support both English and Bengali content where practical.
+
+# 4. Multi-Page Portfolio System
+
+Create a complete portfolio system with a main portfolio page and separate detail pages for individual projects.
+
+The portfolio must not be limited to a single page.
+
+## Portfolio Overview Page
+
+Include:
+
+- Project cards.
+- Project thumbnails.
+- Project titles.
+- Short descriptions.
+- Categories.
+- Technologies used.
+- Project status.
+- View Project buttons.
+- Search and filtering.
+- Featured projects.
+- Recently added projects.
+- Pagination or efficient loading for large collections.
+
+Use project categories such as:
+
+- AI Automation.
+- n8n Workflow Automation.
+- AI Agents.
+- API Integration.
+- WhatsApp and Messenger Automation.
+- Lead Generation.
+- Customer Support Automation.
+- Business Process Automation.
+- Website Development.
+- Experimental Projects.
+
+Allow me to create new categories whenever needed.
+
+## Individual Project Detail Pages
+
+Every project must have its own dynamic URL and detailed page.
+
+Each project may contain:
+
+- Project title.
+- Project description.
+- Project objectives.
+- Problem statement.
+- Proposed solution.
+- Workflow overview.
+- Workflow diagrams.
+- Tools and integrations.
+- Technical implementation.
+- Project screenshots.
+- Demo URL.
+- GitHub or repository URL.
+- Video demonstration URL.
+- Current project status.
+- Challenges and lessons learned.
+- Related projects.
+
+Use a reusable project template so that adding a new project automatically creates its own detail page.
+
+Support project statuses such as Concept, In Progress, Completed, and Published.
+
+Do not require me to upload images during initial setup. Show attractive placeholders until I upload my own images.
+
+All project content must be manageable through the admin dashboard.
+
+# 5. AI Automation Services
+
+Create a separate Services page with individual service detail pages.
+
+Include the following services:
+
+- AI Automation.
+- n8n Workflow Automation.
+- AI Agent Development.
+- OpenAI API Integration.
+- API and Webhook Integration.
+- WhatsApp Automation.
+- Facebook Messenger Automation.
+- Lead Generation Automation.
+- Automated Lead Qualification.
+- Email Automation.
+- Google Sheets Automation.
+- CRM Automation.
+- Customer Support Automation.
+- E-commerce Automation.
+- Business Process Automation.
+- Custom Workflow Development.
+
+Each service detail page should include:
+
+- Service overview.
+- Business problem.
+- Proposed solution.
+- Example use cases.
+- Workflow description.
+- Supported integrations.
+- Expected benefits.
+- Frequently asked questions.
+- Contact or project inquiry button.
+
+Allow me to add, edit, reorder, publish, unpublish, and delete services through the admin panel.
+
+Only present services as currently available when I have confirmed that status in the admin dashboard.
+
+# 6. Skills and Technologies Page
+
+Create a dedicated Skills and Technologies page.
+
+Organize skills into categories such as:
+
+- Automation Platforms.
+- AI Models and APIs.
+- n8n and Workflow Tools.
+- Programming and Web Development.
+- Databases and Spreadsheets.
+- Messaging Integrations.
+- CRM and Business Tools.
+- Hosting and Deployment.
+
+Each skill record should support:
+
+- Technology name.
+- Logo or icon.
+- Short description.
+- Category.
+- Learning status.
+- Proficiency label.
+- Related projects.
+- Documentation URL.
+
+Allow me to add and remove technologies from the admin panel.
+
+Do not display fabricated skill percentages or expertise levels.
+
+# 7. LinkedIn and Professional Social Links
+
+Create a professional social links section on the homepage and a separate professional profiles page.
+
+Support:
+
+- LinkedIn.
+- GitHub.
+- Fiverr.
+- YouTube.
+- Facebook.
+- Email.
+- Other professional platforms.
+
+I may create my LinkedIn profile later. Therefore, the LinkedIn field must initially be optional and editable from the admin dashboard.
+
+If a social link is empty or disabled, hide it from the public website.
+
+Allow me to update the URL, icon, label, order, and visibility of each social link.
+
+External links should open safely in a new tab when appropriate.
+
+Do not claim to integrate with private LinkedIn data or publish LinkedIn posts automatically unless a real, authorized integration has been implemented.
+
+# 8. Contact and Hire Me Page
+
+Create a professional contact page for potential clients.
+
+Include:
+
+- Full name.
+- Email address.
+- Project type.
+- Budget range as an optional field.
+- Project description.
+- Preferred contact method.
+- Submit button.
+- Form validation.
+- Loading indicator.
+- Success message.
+- Error message.
+
+Store contact inquiries securely in Firebase Firestore.
+
+Only authorized administrators should be able to read or manage private contact submissions.
+
+Add spam protection and rate limiting through an appropriate backend implementation.
+
+Allow me to configure my contact email and social links through the admin panel.
+
+# 9. Login, Sign Up, Authentication, and User Account
+
+Implement fully functional Firebase Email/Password Authentication.
+
+The authentication flow is mandatory.
+
+Create the following pages:
+
+- Sign Up.
+- Login / Sign In.
+- Forgot Password.
+- Reset Password flow.
+- User Dashboard.
+- Profile Settings.
+
+## Sign Up
+
+Allow users to create an account using:
+
+- Full name.
+- Email address.
+- Password.
+- Password confirmation.
+
+Include input validation, password requirements, loading states, and clear error messages.
+
+Use Firebase Authentication to create the account. Store only appropriate user profile information in Firestore.
+
+Never store plaintext passwords in Firestore.
+
+## Login / Sign In
+
+Allow existing users to sign in using email and password.
+
+Include:
+
+- Email and password validation.
+- Show or hide password.
+- Loading state.
+- Friendly error messages.
+- Forgot Password link.
+- Link to Create an Account.
+- Redirect to the appropriate permitted page after successful authentication.
+
+## Password Reset
+
+Use Firebase's supported password reset functionality.
+
+Display a clear confirmation message after the reset request is submitted, without unnecessarily revealing whether a particular email address has an account.
+
+## Logout / Sign Out
+
+Provide a working Logout button.
+
+After logout, protected user and admin pages must no longer be accessible without signing in again.
+
+## User Dashboard
+
+Create a private user dashboard with:
+
+- User profile.
+- Display name and email.
+- Profile editing.
+- Account settings.
+- Saved portfolio projects or software links if implemented.
+- Logout button.
+- Account deletion option with confirmation and appropriate data cleanup.
+
+Public visitors must be able to browse the portfolio and services without creating an account.
+
+Do not force users to register just to view public content.
+
+# 10. Secure Administrator Dashboard
+
+Create a separate, fully functional Admin Panel.
+
+The admin panel is essential and must not be a decorative or frontend-only dashboard.
+
+Create protected admin routes, for example:
+
+/admin/login
+
+/admin/dashboard
+
+/admin/portfolio
+
+/admin/services
+
+/admin/about
+
+/admin/skills
+
+/admin/media
+
+/admin/social-links
+
+/admin/messages
+
+/admin/settings
+
+Use appropriate routes based on the final application architecture.
+
+## Admin Dashboard Overview
+
+Display real database counts and management summaries for:
+
+- Portfolio projects.
+- Published projects.
+- Draft projects.
+- Services.
+- Skills.
+- Contact inquiries.
+- Uploaded assets.
+
+Do not display fabricated numbers.
+
+## Portfolio Management
+
+Allow the administrator to:
+
+- Create projects.
+- Edit project information.
+- Delete projects.
+- Save drafts.
+- Publish and unpublish projects.
+- Manage categories.
+- Upload project images.
+- Add demo and repository links.
+- Reorder featured projects.
+
+## About Me Management
+
+Allow the administrator to edit all About Me sections without editing code.
+
+Support adding, deleting, reordering, hiding, and publishing sections.
+
+## Services and Skills Management
+
+Allow full CRUD operations for services, skills, technology categories, and their associated images.
+
+## Website Settings
+
+Allow the administrator to manage:
+
+- Brand name.
+- Logo.
+- Favicon.
+- Tagline.
+- Homepage content.
+- Navigation labels.
+- Theme colors.
+- Social links.
+- LinkedIn URL.
+- Contact details.
+- Footer.
+- SEO metadata.
+- Homepage section visibility.
+- Featured projects.
+- Featured services.
+
+## Contact Inbox
+
+Allow the administrator to read and manage contact submissions.
+
+Support statuses such as New, In Progress, and Resolved.
+
+Protect these messages from unauthorized users.
+
+## Admin Authorization
+
+Use Firebase Authentication together with trusted administrator authorization, such as Firebase custom claims established through a secure server-side process.
+
+Never grant administrator access merely because a user registers, changes a Firestore document, enters a special URL, or modifies frontend JavaScript.
+
+Provide a secure first-administrator setup guide.
+
+Do not hardcode an admin password, secret token, or service-account credential into frontend code.
+
+Regular users must never be able to grant themselves administrator privileges.
+
+# 11. Logo, Image Upload, and Media Management
+
+Build a complete media management system connected to Firebase Storage.
+
+I want to upload my own assets later.
+
+Support uploading and managing:
+
+- Main brand logo.
+- Footer logo.
+- Favicon where supported.
+- Profile photo.
+- Homepage images.
+- Portfolio thumbnails.
+- Project screenshots.
+- Workflow diagrams.
+- Service images.
+- Other authorized website assets.
+
+Provide:
+
+- File selection.
+- Image preview.
+- Upload progress.
+- File type validation.
+- File size validation.
+- Clear success and error messages.
+- Replace image.
+- Remove image.
+- Image alt text.
+- Image metadata.
+- Storage path management.
+- Safe deletion of obsolete assets.
+
+Store asset metadata and relevant storage paths in Firestore.
+
+Use Firebase Storage for actual file storage rather than saving binary files in Firestore documents.
+
+Do not require any image upload during initial development.
+
+When no image is available, use a designed placeholder or fallback image.
+
+Ensure the entire website remains usable when images are missing.
+
+Protect upload and delete operations with administrator authorization and Storage Security Rules.
+
+# 12. Custom Website Appearance
+
+Build a customization system so I can change the visual identity without editing source code.
+
+Allow me to customize:
+
+- Brand logo.
+- Website name.
+- Tagline.
+- Theme colors.
+- Background colors.
+- Accent colors.
+- Typography from supported fonts.
+- Light and dark appearance where practical.
+- Homepage section order.
+- Section visibility.
+- Button text.
+- Navigation labels.
+- Card styles.
+- Footer information.
+- Page descriptions.
+- Featured content.
+
+Save settings in Firestore and load them dynamically.
+
+Only authorized administrators may change global website settings.
+
+Use safe defaults so the website works before any custom settings have been saved.
+
+# 13. Visual Design and User Experience
+
+Create a premium, futuristic, professional AI automation website.
+
+Use this color palette:
+
+- Main background: #070B12.
+- Secondary background: #0D1420.
+- Card background: #111B2A.
+- Primary accent: #00D5FF.
+- Secondary accent: #3B82F6.
+- Main text: #F5F7FA.
+- Muted text: #A0AEC0.
+
+Design requirements:
+
+- Dark professional interface.
+- Elegant glass-inspired cards.
+- Subtle gradients and shadows.
+- Clean typography.
+- Restrained cyan highlights.
+- Smooth, lightweight animations.
+- Professional buttons and navigation.
+- Consistent spacing and layouts.
+- Responsive mobile and desktop design.
+- Accessible color contrast.
+- Visible keyboard focus.
+- Clear loading, success, empty, and error states.
+
+The website should feel like a serious professional technology brand.
+
+Avoid excessive neon, clutter, fake statistics, unnecessary animations, and gaming-style visuals.
+
+Use clear, friendly interface labels such as Home, About Me, Portfolio, Services, Sign In, Create Account, Dashboard, Upload Image, Save Changes, and Logout.
+
+# 14. Technology Stack and Project Structure
+
+Use:
+
+- React.
+- TypeScript.
+- React Router or an equivalent supported routing solution.
+- Firebase Authentication.
+- Cloud Firestore.
+- Firebase Storage.
+- Firebase Security Rules.
+- Firebase App Check where appropriate.
+- Firebase Hosting or a compatible deployment platform.
+
+Use the official Firebase SDK and supported APIs.
+
+Suggested project structure:
+
+src/
+components/
+layouts/
+pages/
+features/
+auth/
+about/
+portfolio/
+services/
+skills/
+contact/
+admin/
+settings/
+services/
+firebase.ts
+authService.ts
+portfolioService.ts
+servicesService.ts
+storageService.ts
+settingsService.ts
+hooks/
+types/
+utils/
+styles/
+
+Adapt this structure to the existing project rather than blindly overwriting working files.
+
+Separate Firebase data access from visual components.
+
+Use TypeScript interfaces for Firestore records and service responses.
+
+Provide reusable components, maintainable code, and consistent error handling.
+
+Do not create nonfunctional buttons or pretend that demo data is live backend data.
+
+# 15. Firebase Backend and Database
+
+Use Cloud Firestore to store website content and application records.
+
+Suggested collections:
+
+- users
+- portfolioProjects
+- projectCategories
+- services
+- skills
+- technologyCategories
+- aboutSections
+- siteSettings
+- socialLinks
+- contactMessages
+- userBookmarks, if implemented
+- adminActivityLogs, if securely implemented
+
+Use stable document IDs, appropriate timestamps, validated fields, and predictable data structures.
+
+Separate public content from private user data.
+
+Public visitors should be able to read published portfolio projects, services, skills, and public website settings.
+
+Only authorized administrators should be able to create, edit, publish, or delete public website content.
+
+Users should be able to access only their own private profile and user-specific records.
+
+Do not expose contact messages, private user data, or administrator records to public visitors.
+
+# 16. Firebase Storage and File Security
+
+I have configured the following in Firebase Console:
+
+1. Email/Password authentication is enabled as a sign-in provider.
+2. Firebase Storage has been set up with a default bucket in production mode.
+
+Inspect the actual project configuration and use the correct Firebase project settings.
+
+Make sure the application upload functionality is connected to the configured Firebase Storage bucket.
+
+Use the Firebase Storage SDK for uploads and store the resulting file paths or URLs in Firestore as appropriate.
+
+Implement:
+
+- Upload progress.
+- File type validation.
+- File size restrictions.
+- Authorized uploads.
+- Authorized deletion.
+- Error handling.
+- Safe storage paths.
+- Cleanup of obsolete assets where appropriate.
+
+Use restrictive Storage Security Rules.
+
+Do not assume that frontend validation is sufficient to secure uploads.
+
+Do not expose private service-account keys, privileged credentials, or server secrets in browser code.
+
+If a configured service is missing, explain the exact steps required to enable it.
+
+# 17. Firestore and Storage Security Rules
+
+Create complete, deployable Firestore Security Rules and Firebase Storage Security Rules.
+
+Requirements:
+
+- Public read access only for intentionally public, published content.
+- Protected administrator write operations.
+- User-specific access controls.
+- Storage ownership and authorization checks.
+- Field validation.
+- File size and content type restrictions.
+- Prevention of unauthorized deletion.
+- Prevention of privilege escalation.
+- Protection of contact messages and private account data.
+
+Use trusted server-side authorization for privileged operations where required.
+
+Do not deploy permissive production rules that allow every user to read and write everything.
+
+Include a testing plan using the Firebase Emulator Suite where practical.
+
+# 18. SEO, Performance, and Accessibility
+
+Implement:
+
+- Unique page titles and descriptions.
+- Appropriate Open Graph metadata.
+- Clean URLs for portfolio and service pages.
+- Responsive images.
+- Lazy loading.
+- Efficient database queries.
+- Pagination or bounded data loading.
+- Semantic HTML.
+- Accessible forms.
+- Keyboard navigation.
+- Reduced-motion support.
+- 404 page.
+- Appropriate hosting security headers where supported.
+- Sitemap and robots.txt where supported by the chosen deployment setup.
+
+Do not promise guaranteed search rankings or claim that every page is automatically indexed.
+
+# 19. Deployment and Free-Tier Requirements
+
+Provide complete deployment instructions.
+
+Explain how to:
+
+1. Open Google AI Studio.
+2. Create or select the Firebase project.
+3. Register the web application.
+4. Configure Firebase environment values.
+5. Enable Email/Password Authentication.
+6. Configure Cloud Firestore.
+7. Verify Firebase Storage configuration.
+8. Deploy Firestore and Storage Security Rules.
+9. Set up the first administrator securely.
+10. Install project dependencies.
+11. Run the application locally.
+12. Build the production application.
+13. Deploy the website.
+14. Test authentication, admin authorization, uploads, and database operations.
+
+Clearly identify current Firebase plan limitations, quotas, regional availability, billing requirements, and any services that may incur charges.
+
+Do not assume every Firebase feature is free.
+
+Do not claim deployment has succeeded unless it has actually been completed and verified.
+
+# 20. Mandatory Functional Testing
+
+Before declaring the application complete, verify:
+
+- Homepage and navigation work.
+- Every portfolio project has a working detail route.
+- About Me content can be edited.
+- Services and skills can be managed.
+- The logo and images can be uploaded through Firebase Storage.
+- Uploaded images display correctly after page refresh.
+- Sign Up works through Firebase Authentication.
+- Login / Sign In works.
+- Password reset works.
+- Logout works.
+- Protected pages reject unauthenticated visitors.
+- Regular users cannot access administrator operations.
+- Administrator permissions are verified securely.
+- Portfolio records save to and load from Firestore.
+- Website settings persist after refresh.
+- Contact submissions are stored securely.
+- Unauthorized database writes are rejected.
+- Unauthorized uploads and deletions are rejected.
+- Missing images do not break the website.
+- Mobile and desktop layouts work.
+- Nested routes load correctly after refresh.
+- No major action button is merely decorative.
+- Production security rules have been tested.
+
+Clearly distinguish fully implemented features from features that still require manual configuration.
+
+# 21. Development Workflow
+
+First inspect the existing project files and Firebase configuration.
+
+Then create an implementation plan and build the application in stages while preserving existing working code.
+
+Follow this order:
+
+1. Project setup and design system.
+2. Header, logo, navigation, and footer.
+3. Homepage.
+4. Detailed About Me page.
+5. Multi-page portfolio and project detail pages.
+6. AI Automation Services and service detail pages.
+7. Skills and Technologies.
+8. LinkedIn and social links.
+9. Contact form.
+10. Firebase Authentication and user dashboard.
+11. Admin authentication and authorization.
+12. Admin content management.
+13. Firebase Storage image upload.
+14. Firestore integration and security rules.
+15. Customization settings.
+16. Testing, fixes, and deployment documentation.
+
+Do not stop after generating the homepage or a frontend preview.
+
+Continue implementing the actual features using the available development tools. If a configuration or tool limitation prevents completion, clearly explain what remains and provide exact steps to finish it.
+
+# Final Deliverables
+
+Deliver:
+
+- A complete ZIHAD AUTIVEX AI AUTOMATION SERVICE web application.
+- All required source files.
+- A multi-page portfolio.
+- Detailed About Me page.
+- AI automation service pages.
+- Login, Sign Up, Logout, and Password Reset.
+- User dashboard.
+- Secure Admin Panel.
+- Logo and image upload system.
+- Firestore integration.
+- Firebase Storage integration.
+- Firestore and Storage Security Rules.
+- Admin setup instructions.
+- Environment variable example.
+- Testing instructions.
+- Local development commands.
+- Deployment guide.
+- A clear list of any remaining configuration requirements.
+
+**Final objective:** Build a complete, professional, secure, customizable, Firebase-powered website for ZIHAD AUTIVEX AI AUTOMATION SERVICE, where I can introduce myself in detail, showcase many portfolio projects across separate pages, promote AI automation services, add my LinkedIn profile later, upload my own logo and images, and manage the entire website through a secure administrator **dashboard.**

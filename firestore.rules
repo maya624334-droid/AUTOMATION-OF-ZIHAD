@@ -1,0 +1,132 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        request.auth.token.email == 'zihadfree22@gmail.com'
+      );
+    }
+
+    // Validation helpers
+    function isValidContactMessage(data) {
+      return data.fullName is string && data.fullName.size() > 0 && data.fullName.size() <= 150
+        && data.email is string && data.email.size() > 3 && data.email.size() <= 150
+        && data.message is string && data.message.size() > 0 && data.message.size() <= 4000
+        && data.status is string && data.status in ['New', 'In Progress', 'Resolved']
+        && (!('projectType' in data) || (data.projectType is string && data.projectType.size() <= 100))
+        && (!('budgetRange' in data) || (data.budgetRange is string && data.budgetRange.size() <= 100))
+        && (!('preferredContact' in data) || (data.preferredContact is string && data.preferredContact.size() <= 100));
+    }
+
+    function isValidPortfolioProject(data) {
+      return data.title is string && data.title.size() > 0 && data.title.size() <= 200
+        && data.category is string && data.category.size() <= 100
+        && data.status is string && data.status in ['Concept', 'In Progress', 'Completed', 'Published']
+        && data.isPublished is bool;
+    }
+
+    function isValidService(data) {
+      return data.title is string && data.title.size() > 0 && data.title.size() <= 200
+        && data.slug is string && data.slug.size() <= 100
+        && data.isPublished is bool;
+    }
+
+    function isValidSkill(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() <= 100
+        && data.category is string && data.category.size() <= 100;
+    }
+
+    function isValidAboutSection(data) {
+      return data.title is string && data.title.size() > 0 && data.title.size() <= 200
+        && data.contentEn is string && data.contentEn.size() <= 10000
+        && data.isPublished is bool;
+    }
+
+    // siteSettings: public read, admin write
+    match /siteSettings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidId(settingId);
+    }
+
+    // portfolioProjects: public can read published, admin full access
+    match /portfolioProjects/{projectId} {
+      allow get: if isValidId(projectId) && (resource.data.isPublished == true || isAdmin());
+      allow list: if isAdmin() || resource.data.isPublished == true;
+      allow create: if isAdmin() && isValidId(projectId) && isValidPortfolioProject(request.resource.data);
+      allow update: if isAdmin() && isValidId(projectId) && isValidPortfolioProject(request.resource.data);
+      allow delete: if isAdmin() && isValidId(projectId);
+    }
+
+    // services: public read published, admin full access
+    match /services/{serviceId} {
+      allow get: if isValidId(serviceId) && (resource.data.isPublished == true || isAdmin());
+      allow list: if isAdmin() || resource.data.isPublished == true;
+      allow create: if isAdmin() && isValidId(serviceId) && isValidService(request.resource.data);
+      allow update: if isAdmin() && isValidId(serviceId) && isValidService(request.resource.data);
+      allow delete: if isAdmin() && isValidId(serviceId);
+    }
+
+    // skills: public read, admin full access
+    match /skills/{skillId} {
+      allow get, list: if true;
+      allow create, update: if isAdmin() && isValidId(skillId) && isValidSkill(request.resource.data);
+      allow delete: if isAdmin() && isValidId(skillId);
+    }
+
+    // aboutSections: public read published, admin full access
+    match /aboutSections/{sectionId} {
+      allow get: if isValidId(sectionId) && (resource.data.isPublished == true || isAdmin());
+      allow list: if isAdmin() || resource.data.isPublished == true;
+      allow create, update: if isAdmin() && isValidId(sectionId) && isValidAboutSection(request.resource.data);
+      allow delete: if isAdmin() && isValidId(sectionId);
+    }
+
+    // contactMessages: anyone can create (with validation), only admin can read/update/delete
+    match /contactMessages/{messageId} {
+      allow create: if isValidId(messageId) && isValidContactMessage(request.resource.data);
+      allow get, list, update, delete: if isAdmin() && isValidId(messageId);
+    }
+
+    // users: each user owns their document, admins can read
+    match /users/{userId} {
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin();
+      allow create, update: if isOwner(userId) && isValidId(userId);
+      allow delete: if isOwner(userId) || isAdmin();
+    }
+
+    // userBookmarks: authenticated users manage their own bookmarks
+    match /userBookmarks/{bookmarkId} {
+      allow get, delete: if isSignedIn() && isValidId(bookmarkId) && resource.data.userId == request.auth.uid;
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn() && isValidId(bookmarkId) && request.resource.data.userId == request.auth.uid;
+      allow update: if isSignedIn() && isValidId(bookmarkId) && resource.data.userId == request.auth.uid && request.resource.data.userId == request.auth.uid;
+    }
+
+    // admins: read & write restricted to admins
+    match /admins/{adminUid} {
+      allow read: if isAdmin();
+      allow write: if isAdmin() && isValidId(adminUid);
+    }
+  }
+}

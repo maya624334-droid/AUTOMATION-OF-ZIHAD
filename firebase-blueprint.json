@@ -1,0 +1,200 @@
+{
+  "entities": {
+    "SiteSettings": {
+      "title": "SiteSettings",
+      "description": "Global website configuration, brand info, social links, and homepage customizations.",
+      "type": "object",
+      "properties": {
+        "brandName": { "type": "string", "maxLength": 100 },
+        "brandSubtitle": { "type": "string", "maxLength": 150 },
+        "professionalTitle": { "type": "string", "maxLength": 100 },
+        "heroHeadline": { "type": "string", "maxLength": 200 },
+        "heroSubtitle": { "type": "string", "maxLength": 300 },
+        "heroIntro": { "type": "string", "maxLength": 1000 },
+        "logoUrl": { "type": "string", "maxLength": 1000 },
+        "footerLogoUrl": { "type": "string", "maxLength": 1000 },
+        "contactEmail": { "type": "string", "maxLength": 150 },
+        "linkedinUrl": { "type": "string", "maxLength": 500 },
+        "githubUrl": { "type": "string", "maxLength": 500 },
+        "fiverrUrl": { "type": "string", "maxLength": 500 },
+        "youtubeUrl": { "type": "string", "maxLength": 500 },
+        "facebookUrl": { "type": "string", "maxLength": 500 },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "PortfolioProject": {
+      "title": "PortfolioProject",
+      "description": "Portfolio project item showcasing AI automation or development work.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "shortDescription": { "type": "string", "maxLength": 500 },
+        "category": { "type": "string", "maxLength": 100 },
+        "status": { "type": "string", "enum": ["Concept", "In Progress", "Completed", "Published"] },
+        "isPublished": { "type": "boolean" },
+        "isFeatured": { "type": "boolean" },
+        "order": { "type": "number" },
+        "technologies": { "type": "string", "maxLength": 500 },
+        "thumbnailUrl": { "type": "string", "maxLength": 1000 },
+        "objectives": { "type": "string", "maxLength": 2000 },
+        "problemStatement": { "type": "string", "maxLength": 2000 },
+        "proposedSolution": { "type": "string", "maxLength": 3000 },
+        "workflowOverview": { "type": "string", "maxLength": 3000 },
+        "technicalImplementation": { "type": "string", "maxLength": 3000 },
+        "challenges": { "type": "string", "maxLength": 2000 },
+        "demoUrl": { "type": "string", "maxLength": 500 },
+        "githubUrl": { "type": "string", "maxLength": 500 },
+        "videoUrl": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "category", "status", "isPublished"]
+    },
+    "Service": {
+      "title": "Service",
+      "description": "AI automation service offering.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "slug": { "type": "string", "maxLength": 100 },
+        "shortDescription": { "type": "string", "maxLength": 500 },
+        "overview": { "type": "string", "maxLength": 3000 },
+        "businessProblem": { "type": "string", "maxLength": 2000 },
+        "proposedSolution": { "type": "string", "maxLength": 3000 },
+        "workflowDescription": { "type": "string", "maxLength": 3000 },
+        "integrations": { "type": "string", "maxLength": 1000 },
+        "expectedBenefits": { "type": "string", "maxLength": 2000 },
+        "icon": { "type": "string", "maxLength": 100 },
+        "isPublished": { "type": "boolean" },
+        "isFeatured": { "type": "boolean" },
+        "order": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "slug", "isPublished"]
+    },
+    "Skill": {
+      "title": "Skill",
+      "description": "Skill or technology item.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "category": { "type": "string", "maxLength": 100 },
+        "description": { "type": "string", "maxLength": 500 },
+        "learningStatus": { "type": "string", "maxLength": 100 },
+        "proficiencyLabel": { "type": "string", "maxLength": 100 },
+        "icon": { "type": "string", "maxLength": 100 },
+        "docsUrl": { "type": "string", "maxLength": 500 },
+        "order": { "type": "number" }
+      },
+      "required": ["name", "category"]
+    },
+    "AboutSection": {
+      "title": "AboutSection",
+      "description": "About me section content in English and Bengali.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "contentEn": { "type": "string", "maxLength": 5000 },
+        "contentBn": { "type": "string", "maxLength": 5000 },
+        "order": { "type": "number" },
+        "isPublished": { "type": "boolean" }
+      },
+      "required": ["title", "contentEn", "isPublished"]
+    },
+    "ContactMessage": {
+      "title": "ContactMessage",
+      "description": "Inquiry submitted through the contact form.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "fullName": { "type": "string", "maxLength": 150 },
+        "email": { "type": "string", "maxLength": 150 },
+        "projectType": { "type": "string", "maxLength": 100 },
+        "budgetRange": { "type": "string", "maxLength": 100 },
+        "message": { "type": "string", "maxLength": 4000 },
+        "preferredContact": { "type": "string", "maxLength": 100 },
+        "status": { "type": "string", "enum": ["New", "In Progress", "Resolved"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["fullName", "email", "message", "status"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Registered user profile.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 150 },
+        "email": { "type": "string", "maxLength": 150 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "UserBookmark": {
+      "title": "UserBookmark",
+      "description": "User saved project bookmark.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "projectId": { "type": "string", "maxLength": 128 },
+        "projectTitle": { "type": "string", "maxLength": 200 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "projectId"]
+    },
+    "AdminDoc": {
+      "title": "AdminDoc",
+      "description": "Authorized administrator record.",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "maxLength": 150 },
+        "role": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/siteSettings/{settingId}": {
+      "schema": { "$ref": "#/entities/SiteSettings" },
+      "description": "Global website configuration and brand details."
+    },
+    "/portfolioProjects/{projectId}": {
+      "schema": { "$ref": "#/entities/PortfolioProject" },
+      "description": "Portfolio projects published by the administrator."
+    },
+    "/services/{serviceId}": {
+      "schema": { "$ref": "#/entities/Service" },
+      "description": "AI automation service listings."
+    },
+    "/skills/{skillId}": {
+      "schema": { "$ref": "#/entities/Skill" },
+      "description": "Skills and technical stack list."
+    },
+    "/aboutSections/{sectionId}": {
+      "schema": { "$ref": "#/entities/AboutSection" },
+      "description": "About me profile sections."
+    },
+    "/contactMessages/{messageId}": {
+      "schema": { "$ref": "#/entities/ContactMessage" },
+      "description": "Customer contact submissions."
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "Public and private user account info."
+    },
+    "/userBookmarks/{bookmarkId}": {
+      "schema": { "$ref": "#/entities/UserBookmark" },
+      "description": "User saved project bookmarks."
+    },
+    "/admins/{adminUid}": {
+      "schema": { "$ref": "#/entities/AdminDoc" },
+      "description": "Administrator registry document."
+    }
+  }
+}
